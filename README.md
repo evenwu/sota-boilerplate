@@ -37,7 +37,7 @@ import Head from 'next/head'
 - viewport 設定也在這裡
 
 ### 其他重要說明
-- 除了 `<Head></Head>` 的東西會自動輸出到 html 的 `<head>` 裡面去，其他都會在 `<body>` 裡面。
+- 除了夾在 `<Head></Head>` 裡面的東西會自動輸出到 html 的 `<head>` 裡面去，其他都會輸出到 `<body>` 裡面。
 - `<Navbar />` `<Footer />` 這兩個特殊的 component 都會放在這裡，讓此網站所有的網頁都擁有這兩樣東西。
 - `<main>{children}</main>` 則是塞入 `page.js` 所有東西的地方。
 
