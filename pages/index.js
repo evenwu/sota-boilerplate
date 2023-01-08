@@ -8,14 +8,20 @@ import Head from 'next/head'
 export default function Page() {
   return (
     <>
-      <em>SOTA Template</em>
-      <ul>
-        <li>nextjs</li>
-        <li>tailwindcss with all plugins</li>
-        <li>layout example</li>
-        <li>component example</li>
-        <li>github pages support</li>
-      </ul>
+      <Head>
+        <title>This is Home page 這是首頁</title>
+      </Head>
+      <div className='border-2 border-stone-800 bg-stone-100'>
+        <Image src='/next.svg' width='100' height='20' alt='nextjs logo' />
+        <h1>SOTA Template</h1>
+        <ul>
+          <li>nextjs</li>
+          <li>tailwindcss with all plugins</li>
+          <li>layout example</li>
+          <li>component example</li>
+          <li>github pages support</li>
+        </ul>
+      </div>
     </>
   )
 }
