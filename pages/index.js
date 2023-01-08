@@ -1,4 +1,4 @@
-import MainLayout from '../components/_main-layout'
+import Layout from '../components/_layout'
 import NestedLayout from '../components/_nested-layout'
 
 import Image from 'next/image'
@@ -22,10 +22,10 @@ export default function Page() {
 
 Page.getLayout = function getLayout(page) {
   return (
-    <MainLayout>
+    <Layout>
       <NestedLayout>
         {page}
       </NestedLayout>
-    </MainLayout>
+    </Layout>
   )
 }
