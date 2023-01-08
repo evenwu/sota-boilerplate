@@ -13,7 +13,7 @@ export default function Page() {
       </Head>
       <div className='border-2 border-stone-800 bg-stone-100'>
         <Image src='/next.svg' width='100' height='20' alt='nextjs logo' />
-        <h1>SOTA Template</h1>
+        <h1>SOTA Template 666</h1>
         <ul>
           <li>nextjs</li>
           <li>tailwindcss with all plugins</li>
