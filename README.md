@@ -39,7 +39,9 @@ import Head from 'next/head'
 - `<Navbar />` `<Footer />` 這兩個特殊的 component 都會放在這裡，讓此網站所有的網頁都擁有這兩樣東西。
 - `<main>{children}</main>` 則是塞入 `page.js` 所有東西的地方。
 
-## 巢狀子 NestedLayout 結構說明
+## 巢狀子 layout — NestedLayout 結構說明
+
+對，就想像為大腸包小腸沒錯。
 
 ### `_nested-layout.js` 是一個示範巢狀 Layout：
 
