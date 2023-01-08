@@ -17,9 +17,9 @@ yarn dev
 
 然後開啟 [http://localhost:3000](http://localhost:3000) 就可以看到基本網頁結構。
 
-## 結構說明
+## Layout 結構說明
 
-`_layout.js` 內放置了專案最基本的元件，包含：
+### `_layout.js` 內放置了專案最基本的元件，包含：
 
 - `<Head></Head>` 裡面該有的東西，例如 `<title>` `<meta>` 等這些基本的 tag
 - 如果頁面要指定自己獨特的 `<title>` 可以在自己的頁面例如 `about.js` 裡面寫這些東西即可覆蓋掉 `_layout.js` 的設定：
