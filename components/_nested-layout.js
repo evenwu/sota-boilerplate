@@ -1,12 +1,17 @@
 export default function NestedLayout({children}) {
   return (
     <>
-      <div className="nested-layout my-4 border-2">
-        <h2 className="relative mx-2 -mt-3 w-fit bg-white px-2 text-gray-400">
+      <div class="nested-layout my-6">
+        <div class="relative mx-2 -mb-2 w-fit bg-white px-2 text-sm leading-none text-slate-400 ">
           NestedLayout Start
-        </h2>
-        {children}
-        <h2 className="relative mx-2 -mb-3 w-fit bg-white px-2 text-gray-400">NestedLayout End</h2>
+        </div>
+        <div class="border-2 border-slate-200 p-5">
+          <h2>NestedLayout Heading</h2>
+          {children}
+        </div>
+        <div class="relative mx-2 -mt-2 w-fit bg-white px-2 text-sm leading-none text-slate-400">
+          NestedLayout End
+        </div>
       </div>
     </>
   )
