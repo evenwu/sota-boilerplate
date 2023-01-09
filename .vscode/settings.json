@@ -3,5 +3,6 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
-  }
+  },
+  "files.trimTrailingWhitespace": true
 }
