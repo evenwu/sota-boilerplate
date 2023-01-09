@@ -1,5 +1,5 @@
 import Layout from '../components/_layout'
-import NestedLayout from '../components/_nested-layout'
+import LayoutNested from '../components/_layout-nested'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -41,7 +41,7 @@ export default function Page() {
 Page.getLayout = function getLayout(page) {
   return (
     <Layout>
-      <NestedLayout>{page}</NestedLayout>
+      <LayoutNested>{page}</LayoutNested>
     </Layout>
   )
 }
