@@ -1,11 +1,12 @@
 export default function Footer() {
   return (
     <>
-      <h1 className="
+      <h1
+        className="
       w-fit
-      p-2 px-4
-      text-white bg-fuchsia-500
-      font-semibold
+      bg-fuchsia-500 p-2
+      px-4 font-semibold
+      text-white
       ">
         FOOTER from MainLayout
       </h1>

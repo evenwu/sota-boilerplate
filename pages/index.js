@@ -11,10 +11,20 @@ export default function Page() {
       <Head>
         <title>This is Home page 這是首頁</title>
       </Head>
-      <div className='page-index px-4'>
-        <h1 className='my-5 font-semibold text-lg'>這裡是網頁內容 666</h1>
-        <Image className='w-[200px] h-auto' src='/next.svg' width='394' height='80' alt='nextjs logo' />
-        <ul className='list-disc list-inside ml-3 my-5'>
+      <div className="page-index px-4">
+        <h1 className="my-5 text-lg font-semibold">這裡是網頁內容 666</h1>
+        <Image
+          className="h-auto w-[200px]"
+          src="/next.svg"
+          width="394"
+          height="80"
+          alt="nextjs logo"
+        />
+        <ul
+          className="
+          my-5 ml-3
+          list-inside list-disc
+        ">
           <li>nextjs</li>
           <li>tailwindcss with all plugins</li>
           <li>layout example</li>
@@ -29,9 +39,7 @@ export default function Page() {
 Page.getLayout = function getLayout(page) {
   return (
     <Layout>
-      <NestedLayout>
-        {page}
-      </NestedLayout>
+      <NestedLayout>{page}</NestedLayout>
     </Layout>
   )
 }
