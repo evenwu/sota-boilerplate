@@ -11,10 +11,10 @@ export default function Page() {
       <Head>
         <title>This is Home page 這是首頁</title>
       </Head>
-      <div className='border-2 border-stone-800 bg-stone-100'>
-        <Image src='/next.svg' width='100' height='20' alt='nextjs logo' />
-        <h1>SOTA Template 666</h1>
-        <ul>
+      <div className='page-index px-4'>
+        <h1 className='my-5 font-semibold text-lg'>這裡是網頁內容 666</h1>
+        <Image className='w-[200px] h-auto' src='/next.svg' width='394' height='80' alt='nextjs logo' />
+        <ul className='list-disc list-inside ml-3 my-5'>
           <li>nextjs</li>
           <li>tailwindcss with all plugins</li>
           <li>layout example</li>
