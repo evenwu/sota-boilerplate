@@ -11,11 +11,17 @@ export default function Page() {
       <Head>
         <title>This is Home page 這是首頁</title>
       </Head>
-      <div class="page-index px-4">
-        <h1 class="my-5 text-lg font-semibold">這裡是網頁內容 666</h1>
-        <Image class="h-auto w-[200px]" src="/next.svg" width="394" height="80" alt="nextjs logo" />
+      <div className="page-index px-4">
+        <h1 className="my-5 text-lg font-semibold">這裡是網頁內容 666</h1>
+        <Image
+          className="h-auto w-[200px]"
+          src="/next.svg"
+          width="394"
+          height="80"
+          alt="nextjs logo"
+        />
         <ul
-          class="
+          className="
           my-5 ml-3
           list-inside list-disc
         ">

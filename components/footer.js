@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <>
       <h1
-        class="
+        className="
         w-fit
         bg-fuchsia-500 p-2
         px-4 font-semibold
