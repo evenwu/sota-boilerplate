@@ -12,24 +12,26 @@ export default function Page() {
         <title>This is Home page 這是首頁</title>
       </Head>
       <div className="page-index px-4">
-        <h1 className="my-5 text-lg font-semibold">這裡是網頁內容 666</h1>
+        <h1 className="mb-5 text-lg font-semibold">這裡是 index.js 的網頁內容 666</h1>
         <Image
-          className="h-auto w-[200px]"
+          className="my-5 h-auto w-[200px]"
           src="/next.svg"
           width="394"
           height="80"
           alt="nextjs logo"
         />
+        這個專案包含了：
         <ul
           className="
-          my-5 ml-3
+          ml-3
           list-inside list-disc
         ">
           <li>nextjs</li>
-          <li>tailwindcss with all plugins</li>
+          <li>tailwindcss with all 1 party plugins</li>
           <li>layout example</li>
           <li>component example</li>
           <li>github pages support</li>
+          <li>prettier and settings, vscode extenstion recommendations</li>
         </ul>
       </div>
     </>
