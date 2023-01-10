@@ -1,4 +1,4 @@
-這是一個 [Next.js](https://nextjs.org/) 專案基礎模板
+# 這是一個 [Next.js](https://nextjs.org/) 專案基礎模板
 
 ## 開始
 
@@ -17,7 +17,7 @@ yarn dev
 
 然後開啟 [http://localhost:3000](http://localhost:3000) 就可以看到基本網頁結構。
 
-## 基本大 Layout 結構說明
+## 基本 Layout 說明
 
 ### `_layout.js` 內放置了專案最基本的元件：
 
@@ -80,7 +80,7 @@ Page.getLayout = function getLayout(page) {
 
 ## 部署說明
 
-### 部署到 **Vercel**
+### 👉 部署到 **Vercel**
 
 1. 無需任何特別的設定。
 1. 去 Vercel Deploy 然後 Import 新專案的 GitHub Repo 即可建立一個新的網站。
@@ -95,14 +95,14 @@ images: {
 },
 ```
 
-### 部署到 **Github Page**
+### 👉 部署到 **Github Page**
 
-1. 修改 `package.json` 檔案裡面的 `YOUR-DOMAIN-HERE` 改為新專案的網址：
+1. 打開 `package.json` 檔案，找到裡面的 `YOUR-DOMAIN-HERE` 改為新專案的網址：
 
-```json
-"page": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && touch out/CNAME && echo 'YOUR-DOMAIN-HERE' >> out/CNAME && gh-pages -d out -t true"
+```
+echo 'YOUR-DOMAIN-HERE' >> out/CNAME
 ```
 
-2. 前往 DNS 服務（我們通常使用 [cloudflare.com](https://dash.cloudflare.com/) ）輸入新專案的 **custom domain**，可參考[官方文件](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)的詳細說明。需注意，apex domain 與 subdomain 兩種的設定方法不同。
-3. 修改新專案 GitHub Repo 的[設定頁面](./settings/pages)，將您的新網址填入 Custom domain，等待黃色的 **🟠 DNS Check in Progress** 這些字，變成綠色的 **✅ DNS check successful** 就設定完成了。
-4. 之後只要 `yarn page` 就會自動部署更新到 **Github Page** 上面。
+2. 前往 DNS 服務（我們通常使用 [cloudflare.com](https://dash.cloudflare.com/) ）輸入新專案的 *custom domain*，可參考[官方文件](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)的詳細說明。需注意，apex domain 與 subdomain 兩種的設定方法不同。
+3. 修改新專案 GitHub Repo 的[設定頁面](./settings/pages)，將您的新網址填入 Custom domain，等待黃色的 *🟠 DNS Check in Progress* 這些字，變成綠色的 *✅ DNS check successful* 就設定完成了。
+4. 之後只要 `yarn page` 就會自動部署更新到 *Github Page* 上面。
