@@ -107,7 +107,7 @@ echo 'YOUR-DOMAIN-HERE' >> out/CNAME
   - 我們通常使用 [cloudflare.com](https://dash.cloudflare.com/)，輸入新專案的 custom domain
   - 可參考[官方文件](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)的詳細說明。需注意，apex domain 與 subdomain 兩種的設定方法不同。
 3. 修改新專案 GitHub Repo 的[設定頁面](../../settings/pages)
-  - Source: Deploy from a branch
-  - Branch: `gh-pages` folder: `/(root)`
+  - 設定 Source: `Deploy from a branch`
+  - 設定 Branch: `gh-pages` folder: `/(root)`
   - 將新網址填入 Custom domain 欄位，等待黃色的 “🟠 DNS Check in Progress” 這些字，變成綠色的 “✅ DNS check successful” 就設定完成了。
 4. 之後只要 `yarn page` 就會自動部署更新到 *Github Page* 上面。
