@@ -27,7 +27,7 @@ export default function Page() {
           list-inside list-disc
         ">
           <li>nextjs</li>
-          <li>tailwindcss with all 1 party plugins</li>
+          <li>tailwindcss with all first party plugins</li>
           <li>layout example</li>
           <li>component example</li>
           <li>github pages support</li>
