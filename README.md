@@ -109,5 +109,5 @@ echo 'YOUR-DOMAIN-HERE' >> out/CNAME
 3. 修改新專案 GitHub Repo 的[設定頁面](../../settings/pages)
   - 設定 Source: `Deploy from a branch`
   - 設定 Branch: `gh-pages` 📁 `/(root)`
-  - 將新網址填入 Custom domain 欄位，等待黃色的 “🟠 DNS Check in Progress” 這些字，變成綠色的 “✅ DNS check successful” 就設定完成了。
+  - 將新網址填入 Custom domain 欄位，等待黃色的 **「🟠 DNS Check in Progress」** 這些字，變成綠色的 **「✅ DNS check successful」** 就設定完成了。
 4. 之後只要 `yarn page` 就會自動部署更新到 *Github Page* 上面。
