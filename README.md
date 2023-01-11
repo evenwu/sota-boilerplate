@@ -83,9 +83,9 @@ Page.getLayout = function getLayout(page) {
 ### 👉 部署到 **Vercel**
 
 1. 無需任何特別的設定。
-1. 去 Vercel Deploy 然後 Import 新專案的 GitHub Repo 即可建立一個新的網站。
-1. 之後只要 Push 到 main 的分支，Vercel 伺服器就會自動部署新版本。
-1. 如果需要 Vercel 伺服器幫忙處理圖片最佳化，則需修改 `next.config.js` 把裡面這個設定移除：
+2. 去 Vercel Deploy 然後 Import 新專案的 GitHub Repo 即可建立一個新的網站。
+3. 之後只要 Push 到 main 的分支，Vercel 伺服器就會自動部署新版本。
+4. 如果需要 Vercel 伺服器幫忙處理圖片最佳化，則需修改 `next.config.js` 把裡面這個設定移除：
 
 ```tsx
 // next.config.js
@@ -94,6 +94,8 @@ images: {
   unoptimized: true,
 },
 ```
+
+5. 如果不想要 vercel 自動部署 `main` 以外的 branch，那麼就要在 settings/git 裡面找到 Ignored Build Step 的欄位加上 `[ "$VERCEL_ENV" != production ]`
 
 ### 👉 部署到 **Github Page**
 
