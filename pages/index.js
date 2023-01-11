@@ -12,7 +12,7 @@ export default function Page() {
         <title>This is Home page 這是首頁</title>
       </Head>
       <div className="page-index px-4">
-        <h1 className="mb-5 text-lg font-semibold">這裡是 index.js 的網頁內容 666</h1>
+        <h1 className="mb-5 text-lg font-semibold">這裡是 index.js 的網頁內容 666444</h1>
         <Image
           className="my-5 h-auto w-[200px]"
           src="/next.svg"
