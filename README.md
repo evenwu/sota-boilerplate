@@ -104,12 +104,12 @@ echo 'YOUR-DOMAIN-HERE' >> out/CNAME
 ```
 
 2. 設定 DNS 服務
-  - 我們通常使用 [cloudflare.com](https://dash.cloudflare.com/)，輸入新專案的 custom domain
-  - 可參考[官方文件](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)的詳細說明。需注意，apex domain 與 subdomain 兩種的設定方法不同。
+    - 我們通常使用 [cloudflare.com](https://dash.cloudflare.com/)，輸入新專案的 custom domain
+    - 可參考[官方文件](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)的詳細說明。需注意，apex domain 與 subdomain 兩種的設定方法不同。
 3. 修改新專案 GitHub Repo 的[設定頁面](../../settings/pages)
-  - 設定 Source: `Deploy from a branch`
-  - 設定 Branch: `gh-pages` 📁 `/(root)`
-  - 將新網址填入 Custom domain 欄位，等待黃色的 **「🟠 DNS Check in Progress」** 這些字，變成綠色的 **「✅ DNS check successful」** 就設定完成了。
+    - 設定 Source: `Deploy from a branch`
+    - 設定 Branch: `gh-pages` 📁 `/(root)`
+    - 將新網址填入 Custom domain 欄位，等待黃色的 **「🟠 DNS Check in Progress」** 這些字，變成綠色的 **「✅ DNS check successful」** 就設定完成了。
 4. 新增 personal sccess token 給 Github Actions 用，位置在 [https://github.com/settings/tokens](https://github.com/settings/tokens) 名字可填寫這個網站的名稱，生成後記得 copy 起來，這個 token 只會顯示一次！
 5. 前往專案的 [Secrets and variables](../../settings/secrets/actions) 按下 "New repository secret" 生成 GitHub Actions 專用的密碼代號，這邊建議的名稱為 `COMMIT_SECRET` 內容貼上剛剛複製的 token
 6. 由於本專案已經寫完自動部署的指令（位置在[.github/workflows](.github/workflows)/`main.yml` ），以後這個專案只要有人 push 到 main，github page 就會自動更新了 🤘
