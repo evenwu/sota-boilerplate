@@ -9,7 +9,7 @@
     "lint": "next lint",
     "format": "prettier --check --ignore-path .gitignore .",
     "format:fix": "prettier --write --ignore-path .gitignore .",
-    "page": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && touch out/CNAME && echo 'github-page.sota.design' >> out/CNAME && cp ignoredeploy.json out/vercel.json"
+    "page": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && touch out/CNAME && echo 'github-page.sota.design' >> out/CNAME"
   },
   "dependencies": {
     "@next/font": "^13.1.1",
