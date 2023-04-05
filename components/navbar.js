@@ -21,6 +21,8 @@ export default function Navbar() {
           <Link href="/about">About</Link>
         </li>
       </ul>
+
+      {/* Mobile Menu */}
       <div className="sm:hidden">
         <Menu />
       </div>

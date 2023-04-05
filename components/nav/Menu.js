@@ -5,6 +5,7 @@ import {useDimensions} from './use-dimensions'
 import {MenuToggle} from './MenuToggle.js'
 import {Navigation} from './Navigation'
 
+// 選單開關色塊大小，座標 例如：circle(圓形半徑 at left座標 top座標)
 const sidebar = {
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 260px 37px)`,

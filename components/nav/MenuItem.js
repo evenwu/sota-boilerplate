@@ -9,6 +9,7 @@ const variants = {
     opacity: 1,
     transition: {
       y: {stiffness: 1000, velocity: -100},
+      // 彈簧（string）的stiffness 剛性 , velocity 初始速度
     },
   },
   closed: {

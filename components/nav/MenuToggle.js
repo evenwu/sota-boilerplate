@@ -13,6 +13,7 @@ const Path = (props) => (
 
 export const MenuToggle = ({toggle}) => (
   <button
+    //   按鈕樣式
     className=" absolute top-4 right-4 flex h-[46px] w-[46px] cursor-pointer items-center justify-center rounded-full bg-transparent"
     onClick={toggle}>
     <svg width="23" height="23" viewBox="0 0 23 23">
